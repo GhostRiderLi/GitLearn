@@ -4,13 +4,15 @@
 
 2. `git clone https://github.com/XXXX/XXX`: 克隆代码库到本地
 
-3. `git remote add `
+3. `git remote add origin git@github.com:xxxx/learngit.git`：在本地初始化好的仓
+    库连接到指定远程仓库。
 
 4. `git add file-name`：将本地工作目录(workfile)的改动提交到暂存(.git/index);
 
-5. `git cimmit file-name -m "comment-string"`：将index中的改动提交到本地的代码库(.git)
+5. `git commit file-name -m "comment-string"`：将index中的改动提交到本地的代码库(.git)
 
 6. `git push <远程主机名> <本地分支名>:<远程主机下分支>` 将本地分支推送到远程主机下的对应分支。
+    + `git push -u orign master`：我们第一次推送master分支时，使用`-u`
 
     + `git push origin master`：将本地代码库master分支的改动推送到远程代码库；
 
@@ -24,7 +26,7 @@
 
 9. `git checkout -b branch-name`：新建branch-name分支，并且切换发到branch-name分支。
 
-10. `git branch -d branch-name`：删除分支。 
+10. `git branch -d branch-name`：合并之后删除分支，合并之前强制删除分支使用`-D`。 
 
 11. `git checkout --file-name`：在添加到暂存区之前撤销对工作区文件的修改；
 
